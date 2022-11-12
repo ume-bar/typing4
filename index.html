@@ -14,7 +14,13 @@
 <body>
   <div id="app">
     <div>
-      {{ key }} / {{ keyCode }}
+      <!-- {{ formatTime }} -->
+      スコア: {{ score }}点 / 残り秒数: {{ timer }}秒<br>
+      <img :src="`/images/dice${qDice}.png`" :style="{width: '100px'}">
+      <!-- {{ key }} / {{ keyCode }} -->
+      <img :src="`/images/dice${dice}.png`" :style="{width: '100px'}">
+      <!-- <button v-on:click="start" v-if="!timerOn">Start</button>
+      <button v-on:click="stop" v-if="timerOn">Stop</button> -->
     </div>
   </div>
 </body>
